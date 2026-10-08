@@ -64,7 +64,7 @@ async function consultarViaCep(cep, sinal) {
         throw new Error("A ViaCEP retornou dados em um formato inesperado.");
     }
 
-    if (dados.erro === true) {
+    if (dados.erro === true || dados.erro === "true") {
         throw new Error("CEP não encontrado. Confira o número informado.");
     }
 
