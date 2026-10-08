@@ -1,38 +1,51 @@
 # Consulta de endereço por CEP
 
-Demonstração de um formulário de cadastro que consulta a API ViaCEP para preencher automaticamente os dados de endereço.
+Formulário de cadastro que consulta a API ViaCEP e preenche os dados de endereço a partir do CEP informado.
 
-**Demonstração:** https://raphael-bezerra.github.io/js-consumindo-dados-api/
+<p>
+    <a href="https://raphael-bezerra.github.io/js-consumindo-dados-api/">
+        <img src="https://img.shields.io/badge/VER%20DEMO-1875E8?style=for-the-badge&logo=githubpages&logoColor=white" alt="Ver demonstração">
+    </a>
+    <a href="https://github.com/Raphael-Bezerra/js-consumindo-dados-api">
+        <img src="https://img.shields.io/badge/VER%20C%C3%93DIGO-181717?style=for-the-badge&logo=github&logoColor=white" alt="Ver código">
+    </a>
+</p>
 
-## Funcionalidades
+## 🏷️ Sobre
 
-- Consulta de endereço ao sair do campo CEP.
-- Normalização e validação do formato do CEP.
-- Preenchimento de logradouro, bairro, cidade e estado.
-- Estados visuais de consulta, sucesso e erro.
-- Formulário com validação nativa dos campos obrigatórios.
+Projeto educacional de formulário com consulta de endereço pela API ViaCEP.
 
-## Conceitos praticados
+Ao sair do campo CEP, a aplicação valida e normaliza a entrada e, se válida, consulta a API para preencher logradouro, bairro, cidade e estado.
 
-- `async`/`await`, `fetch` e Promises.
-- Validação e normalização de strings com expressões regulares.
-- Tratamento de erros HTTP, de rede e de respostas inesperadas.
+O formulário também valida os campos obrigatórios no navegador e apresenta estados de carregamento, sucesso e erro. Os dados pessoais permanecem no navegador; somente o CEP é enviado à ViaCEP para consulta.
+
+## 🧠 Conceitos praticados
+
+- Funções com responsabilidades separadas para validar, consultar a API e atualizar o DOM.
+- `fetch`, Promises, `async`/`await` e tratamento de erros.
+- Validação e normalização de entradas com expressões regulares.
+- Eventos `input`, `blur` e `submit` e atualização dos elementos do formulário.
 - `AbortController` para cancelar consultas desatualizadas.
-- Eventos do DOM, atualização de campos e feedback acessível.
+- Validação nativa de formulários HTML e mensagens acessíveis com `aria-live`.
 
-## Tecnologias
+## 🚀 Tecnologias
 
-- HTML5
-- CSS3
-- JavaScript (ES6+)
-- [ViaCEP](https://viacep.com.br/)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-O CEP informado é enviado à ViaCEP para consulta. Os demais dados do formulário são usados somente no navegador; este projeto não os armazena nem os envia a um servidor.
+**API consumida:** [ViaCEP](https://viacep.com.br/)
 
-## Código
+## 👨‍💻 Autor
 
-Repositório: https://github.com/Raphael-Bezerra/js-consumindo-dados-api
+<table>
+    <tr>
+        <td align="center">
+            <img src="https://github.com/Raphael-Bezerra.png" width="120" alt="Foto de Raphael Bezerra">
+            <br>
+            <sub><b>Raphael Bezerra</b></sub>
+        </td>
+    </tr>
+</table>
 
-## Autor
-
-Raphael Bezerra
+[![GitHub](https://img.shields.io/badge/GitHub-Raphael--Bezerra-181717?style=for-the-badge&logo=github)](https://github.com/Raphael-Bezerra)
