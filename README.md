@@ -2,7 +2,7 @@
 
 Demonstração de um formulário de cadastro que consulta a API ViaCEP para preencher automaticamente os dados de endereço.
 
-**Demonstração:** https://raphael-bezerra.github.io/js-consumindo-dados-api/ (após publicação no GitHub Pages)
+**Demonstração:** https://raphael-bezerra.github.io/js-consumindo-dados-api/
 
 ## Funcionalidades
 
